@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="css/font-awesome/all.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +19,11 @@
     <section id="home">
         <div class="home-bg">
             <header>
-                <div class="logo">
-                    DITA
-                </div>
+                <a href="#home">
+                    <div class="logo">
+                        DITA
+                    </div>
+                </a>
                 <div class="menu-list">
                     <ul id="myDIV">
                         <li class="btn active">
@@ -38,20 +42,157 @@
                             <a href="#contact">Contact Me</a>
                         </li>
                     </ul>
-                </div>
+                </div><!-- MENU-LIST END -->                
             </header>
             <div class="intro-self">
                 <div class="intro-text">
                     <h1>Hello! I am <span class="name">Arial DITA</span></h1>
-                </div>
+                </div><!-- INTRO-TEXT END -->
                 <div class="intro-ocpt">I am a Fullstack Developer</div>
+            </div><!-- INTRO=SELF END -->
+        </div><!-- HOME-BG END -->
+    </section><!-- HOME END -->
+    <section id="about">
+        <main>
+            <div class="about-wrapper">
+                <div class="text">
+                    <h3 id="about-me">About Me</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam molestiae ad sunt, itaque doloribus mollitia praesentium magnam corporis impedit, nobis beatae fuga magni repellendus cupiditate!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sit accusamus aspernatur omnis, laborum at eum quae perspiciatis!
+                    </p>
+                    <a href="#" id="resume">Resume</a>
+                </div><!-- ABOUT-WRAPPER-INNER TEXT END-->
+                <div class="about-wrapper-inner large"><img src="images/girl.svg" alt="DITA" class="about-image"></div>
+            </div><!-- ABOUT-WRAPPER END-->
+        </main>
+    </section><!-- ABOUT END-->
+    <section id="services">
+        <main>
+            <div class="service-intro">
+                <h3 id="services-head">Services</h3>
+                <p class="services-p">What I Can Do For You</p>
             </div>
+            <div id="services-wrapper">
+                <div class="services-wrapper-inner">
+                    <div class="icons">
+                        <img src="images/monitor.png" alt="monitor">
+                    </div>
+                    <div class="below-icons">
+                        <h3>WebApps and Websites</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur ipsum.</p>
+                    </div>
+                </div>
+                <div class="services-wrapper-inner">
+                    <div class="icons">
+                        <img src="images/monitor.png" alt="monitor">
+                    </div>
+                    <div class="below-icons">
+                        <h3>Apps</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur ipsum.</p>
+                    </div>
+                </div>
+                <div class="services-wrapper-inner">
+                    <div class="icons">
+                        <img src="images/monitor.png" alt="monitor">
+                    </div>
+                    <div class="below-icons">
+                        <h3>Graphic Designs</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur ipsum.</p>
+                    </div>
+                </div>
+                <div class="services-wrapper-inner">
+                    <div class="icons">
+                        <img src="images/monitor.png" alt="monitor">
+                    </div>
+                    <div class="below-icons">
+                        <h3>Animations</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur ipsum.</p>
+                    </div>
+                </div>
+            </div><!--SERVICES-WRAPPER END-->
+        </main>
+    </section><!-- SERVICES END-->
+    <section id="portfolio">
+        <main>
+            <h3 id="portfolio-head">Portfolio</h3>
+            <p class="portfolio-p">some of my best works...</p>
+            <div id="portfolio-wrapper1">
+                <div class="portfolio-wrapper1-inner">
+                    <img src="images/graffiti.jpg" alt="my work" height="300px" width="400px">
+                    <p>Title Here</p>
+                    <p>Website</p>
+                </div>
+                <div class="portfolio-wrapper1-inner">
+                    <img src="images/graffiti.jpg" alt="my work" height="300px" width="400px">
+                    <p>Title Here</p>
+                    <p>Website</p>
+                </div>
+                <div class="portfolio-wrapper1-inner">
+                    <img src="images/graffiti.jpg" alt="my work" height="300px" width="400px">
+                    <p>Title Here</p>
+                    <p>Website</p>
+                </div>
+            </div><!--PORTFOLIO WRAPPER1 END-->
+            <div id="portfolio-wrapper2">
+                <div class="portfolio-wrapper2-inner inner-flex">
+                    <img src="images/lrg-graffiti.jpg" alt="my work" width="630px" height="497px">
+                    <div class="paragraph">
+                        <p>Title Here</p>
+                        <p>Website</p>
+                    </div>
+                </div>
+                <div class="portfolio-wrapper2-inner aside">
+                    <img src="images/graffiti.jpg" alt="my work" height="300px" width="100%">
+                    <div class="aside">
+                        <p>Title Here</p>
+                        <p>Website</p>
+                    </div>
+                </div>
+            </div><!--PORTFOLIO-WRAPPER2 END-->
+            <div id="portfolio-wrapper3">
+                <div class="portfolio-wrapper2-inner aside">
+                    <img src="images/graffiti.jpg" alt="my work" height="300px" width="100%">
+                    <div class="aside">
+                        <p>Title Here</p>
+                        <p>Website</p>
+                    </div>
+                </div><!--aside end-->
+                <div class="portfolio-wrapper2-inner inner-flex">
+                    <img src="images/lrg-graffiti.jpg" alt="my work" width="630px" height="497px">
+                    <div class="paragraph">
+                        <p>Title Here</p>
+                        <p>Website</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section><!-- PORTFOLIO END-->
+    <section id="counter">
+        <div class="counter-inner">
+            <i class="fa fa-twitter"></i>
         </div>
-    </section>
-    <section id="about"></section>
-    <section id="services"></section>
-    <section id="portfolio"></section>
-    <section id="contact"></section>
+        <div class="counter-inner"></div>
+        <div class="counter-inner"></div>
+        <div class="counter-inner"></div>
+        <div class="counter-inner"></div>
+    </section><!--COUNTER END-->
+    <main>
+        <section id="contact">
+            <h3 id="contact-me">Contact Me</h3>
+            <div id="contact-inner">
+                <p id="contact-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam impedit accusamus harum possimus. Dolorem aspernatur repellat, similique at porro iste id voluptatibus assumenda dolorum ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laborum sequi vel fuga distinctio blanditiis omnis ea a eligendi animi.</p>
+                <form action="GET">
+                    <label for="name">Hi there, what's your name?</label>
+                    <input type="text" placeholder="John">
+                    <label for="email">and you email too</label>
+                    <input type="email" name="email" placeholder="me@gmail.com">
+                    <label for="">what can i help you with?</label>
+                    <input type="text">
+                    <label for="">tell me more about it</label>
+                    <textarea name="message" cols="30" rows="5"></textarea>
+                </form>
+            </div><!--CONTACT-INNER END-->
+        </section><!-- CONTACT END--></main>
 
     <script src="js/custom.js"></script>
 </body>
