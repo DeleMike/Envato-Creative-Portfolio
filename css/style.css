@@ -265,12 +265,44 @@ header .logo {
 
 /* COUNTER */
 
-#counter{
+/* #counter{
     width: auto;
     background-color: var(--main-theme);
-    height: 45vh;
+    height: 60vh;
     margin-bottom: 50px;
+} */
+.counter{
+    width: auto;
+    min-height: 100vh;
+    display: flex;
+    background-color: var(--main-theme);
+    margin-bottom: 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.counter h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.day,.hour,.minute,.second{
+    font-size: 3rem;
+}
+
+.waiting {
+    height: 50vh;
+}
+
+
 
 /* CONTACT */
 #contact{
