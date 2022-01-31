@@ -1,5 +1,6 @@
 :root{
-    --main-theme: #A16B9D;
+    /* --main-theme: #A16B9D; */
+    --main-theme: #4F35EF;
 }
 body {
     width: 100vw;
@@ -18,7 +19,7 @@ a {
 
 main{
     width: 90vw;
-    height: fit-content;
+    height: 100%;
     background-color: #fff;
     margin: auto;
 }
@@ -125,6 +126,13 @@ header .logo {
 
 .text p{
     font-size: 1.2em;
+    color: #000;
+    
+}
+
+.about-me-text {
+    margin-bottom: 16px;
+    padding: 6px;
 }
 
 #about-me{
@@ -139,9 +147,13 @@ header .logo {
     background-color: var(--main-theme);
     color: #fff;
     opacity: 0.85;
-    border-radius: 5px;
-    border: #0f0f0f;
-    padding: 7px 15px;
+    border-radius: 4px;
+    offset: 0px, 4px;
+    padding: 16px;
+    box-shadow: rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+
+    
 }
 
 .about-wrapper-inner{
@@ -188,22 +200,27 @@ header .logo {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     height: fit-content;
     margin-top: 55px;
 }
 
 .services-wrapper-inner{
-    width: 49%;
+    width: 45%;
     margin: 10px auto;
-    height: 400px;
+    height: 100%;
     background-color: var(--main-theme);
     display: block;
-    justify-content: space-between;
+    justify-content: space-around;
+    border-radius: 8px;
 }
 
-.icons{
+.services-wrapper-inner h3, p {
+    color: #fff;
+}
+
+/* .icons{
     width: 80%;
     margin: 15px auto;
     height: 45%;
@@ -220,7 +237,7 @@ header .logo {
     width: 80%;
     margin: auto;
     height: 50%;
-}
+} */
 
 
 /* PORTFOLIO */
@@ -286,6 +303,7 @@ header .logo {
     font-size: 5rem;
     font-weight: bold;
     padding: 3rem;
+    color: #fff;
 }
 
 .countdown {
@@ -296,9 +314,15 @@ header .logo {
 
 .day,.hour,.minute,.second{
     font-size: 3rem;
+    color: #fff;
 }
 
-.waiting {
+.countdown h3 {
+    color: #fff;
+
+}
+
+.waiting{
     height: 50vh;
 }
 
@@ -329,7 +353,13 @@ input, textarea{
 label{
     margin-left: 70px;
 }
-@media (max-width: 1000px) {
+
+@media screen and (max-width: 500px){
+    .intro-self {
+        padding: auto;
+    }
+}
+/* @media (max-width: 1000px) {
     .intro-text {
         margin-top: 30%;
     }
@@ -364,4 +394,4 @@ label{
         background: url(../images/avatar.svg) rgba(0, 0, 30, 0.85) no-repeat;
         background-size: cover;
     }
-}
+} */
