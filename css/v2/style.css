@@ -1,5 +1,7 @@
 :root {
    --color-primary: #4F35EF;
+   --accent-color: #d8d6e6;
+   --text-color: #363333;
 }
 
 * {
@@ -8,9 +10,8 @@
    box-sizing: border-box;
 }
 
-header{
-   /* background: rgba(0, 0, 30, 0.95); */
-  
+body {
+   overflow-x: hidden;
 }
 
 nav {
@@ -59,6 +60,11 @@ nav {
    font-size: 12px;
 }
 
+.underline:hover {
+   border-bottom: 2px solid currentColor;
+   background-size: 1px 1em;
+}
+
 .burger {
    display: none;
    cursor: pointer;
@@ -69,7 +75,116 @@ nav {
    height: 2px;
    background-color: #d8d6e6;
    margin: 5px;
-   transition: all 0,3s ease;
+   transition: all 0, 3s ease;
+}
+
+.intro-self {
+   height: 100vh;
+   padding: 1px;
+   text-align: center;
+   vertical-align: middle;
+}
+
+.intro-text {
+   margin-top: 25%;
+   margin-bottom: auto;
+}
+
+.intro-text h1 {
+   margin: 10px;
+   font-size: 48px;
+   color: var(--accent-color);
+}
+
+.intro-text .name {
+   color: var(--color-primary);
+}
+
+.intro-ocpt {
+   font-size: 20px;
+   color: var(--accent-color);
+}
+
+#about-land {
+   margin-bottom: 100px;
+}
+
+#about-mobile {
+   display: none;
+}
+
+.about-wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 80vh;
+   width: 100%;
+}
+
+.text {
+   text-align: left;
+   margin-top: 50vh;
+   padding-left: 100px;
+   width: 65%;
+   height: 100%;
+}
+
+.text p {
+   font-size: 1.2em;
+   color: var(--text-color);
+
+}
+
+
+#about-me {
+   padding-bottom: 16px;
+   text-align: justify;
+   font-size: 2em;
+   font-weight: solid;
+   color: var(--color-primary);
+   margin-bottom: 18px;
+}
+
+#resume {
+   background-color: var(--color-primary);
+   color: #fff;
+   opacity: 0.85;
+   border-radius: 4px;
+   padding: 16px;
+   box-shadow: rgba(0, 0, 0, 0.25);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   width: 35%;
+   height: 12%;
+   cursor: pointer;
+   margin-top: 18px;
+   border: transparent;
+   background: url(/images/Button.png) no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.about-wrapper-inner {
+   width: 30%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.large {
+   width: 100%;
+}
+
+.about-image {
+   height: 70vh;
+   width: 50vh;
+   margin-top: 10%;
+   border-radius: 30px;
+   background: url(/images/girl.svg) no-repeat;
+   background-position: center;
+   background-size: cover;
+   
 }
 
 @media screen and (max-width:1024px) {
@@ -81,6 +196,18 @@ nav {
 }
 
 @media screen and (max-width:768px) {
+
+   body {
+      overflow-x: hidden ;
+   }
+
+   #about-land {
+      display: none;
+   }
+
+   #about-mobile {
+      display: block;
+   }
 
    .nav-links {
       position: absolute;
@@ -104,6 +231,87 @@ nav {
    .burger {
       display: block;
    }
+
+   .intro-text {
+      margin-top: 45%;
+      margin-bottom: 50px;
+   }
+
+   .intro-text h1 {
+      margin: 10px;
+      font-size: 48px;
+      color: var(--accent-color);
+   }
+
+   .intro-text .name {
+      color: var(--color-primary);
+   }
+
+   .about-wrapper {
+      display: table;
+      width: 100%;
+   }
+   
+   .text {
+     margin-top: 32px;
+   }
+   
+   .text p {
+      font-size: 1.2em;
+      color: var(--text-color);
+      margin-top: 50px;
+      width: 75vw;
+   }
+   
+   
+   #about-me {
+      padding: 16px;
+      width: 150px;
+      text-align: justify;
+      font-size: 1.7em;
+      font-weight: solid;
+      color: var(--color-primary);
+      margin-bottom: 18px;
+   }
+   
+   #resume {
+      border-radius: 4px;
+      padding: 20px;
+      box-shadow: rgba(0, 0, 0, 0.25);
+      width: 75%;
+      align-items: center;
+      cursor: pointer;
+      /* margin-top: 30px; */
+      border: transparent;
+      background: url(/images/Button.png) no-repeat;
+      background-position: center;
+      background-size: cover;
+   }
+   
+   .about-wrapper-inner {
+      width: 40%;
+      height: 100%;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+   
+   .large {
+      width: 100%;
+   }
+   
+   .about-image {
+      height: 30vh;
+      width: 30vh;
+      margin-top: 10%;
+      border-radius: 30px;
+      background: url(/images/girl.svg) no-repeat;
+      background-position: center;
+      background-size: cover;
+      
+   }
 }
 
 .nav-active {
@@ -115,6 +323,7 @@ nav {
       opacity: 0;
       transform: translate(50px);
    }
+
    to {
       opacity: 1;
       transform: translate(0px);
@@ -124,10 +333,11 @@ nav {
 .toggle .line1 {
    transform: rotate(-45deg) translate(-5px, 6px);
 }
+
 .toggle .line2 {
    opacity: 0;
 }
 
-.toggle .line3{
+.toggle .line3 {
    transform: rotate(45deg) translate(-5px, -6px);
 }
