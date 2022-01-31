@@ -2,57 +2,132 @@
    --color-primary: #4F35EF;
 }
 
- html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
- }
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
 
+header{
+   /* background: rgba(0, 0, 30, 0.95); */
+  
+}
 
-@media screen and (max-width: 500px) {
+nav {
+   display: flex;
+   justify-content: space-between;
+   padding: 16px;
+   padding-right: 10%;
+   align-items: center;
+   min-height: 8vh;
+   font-family: 'Prompt', sans-serif;
+   background-color: rgba(1, 1, 68, 0.911);
+   background-blend-mode: lighten;
+}
 
+.home-bg {
+   width: 100%;
+   height: 100vh;
+   background: url(/images/girl.svg) rgba(0, 0, 30, 0.76) no-repeat;
+   background-blend-mode: darken;
+   background-position: center;
+   background-size: cover;
+}
 
-   /* Style the navigation menu */
-   header {
-      overflow: hidden;
-      background-color: var(--color-primary);
-      position: relative;
-      overflow-x: hidden;
+.logo {
+   color: #d8d6e6;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   font-size: 20px;
+}
+
+.nav-links {
+   display: flex;
+   justify-content: space-around;
+   width: 40%;
+}
+
+.nav-links li {
+   list-style-type: none;
+}
+
+.nav-links a {
+   color: #d8d6e6;
+   text-decoration: none;
+   letter-spacing: 3px;
+   font-weight: bold;
+   font-size: 12px;
+}
+
+.burger {
+   display: none;
+   cursor: pointer;
+}
+
+.burger div {
+   width: 25px;
+   height: 2px;
+   background-color: #d8d6e6;
+   margin: 5px;
+   transition: all 0,3s ease;
+}
+
+@media screen and (max-width:1024px) {
+   .nav-links {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
    }
+}
 
-   header a {
-      color: white;
-      font-weight: 700;
-   }
+@media screen and (max-width:768px) {
 
-   /* Hide the links inside the navigation menu (except for logo/home) */
-   nav {
-      display: none;
-   }
-
-   /* Style navigation menu links */
-   nav a {
-      color: white;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-      display: block;
-   }
-
-   /* Style the hamburger menu */
-   .icon {
-      display: block;
+   .nav-links {
       position: absolute;
-      right: 0;
-      top: 0;
+      right: 0px;
+      height: 50vh;
+      top: 8vh;
+      background-color: rgba(1, 1, 68, 0.911);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
    }
 
-   /* Add a grey background color on mouse-over */
-   nav a:hover {
-   background-color: #ddd;
-   color: black;
- }
+   .nav-links li {
+      opacity: 0;
+      line-height: 18px;
+   }
 
+   .burger {
+      display: block;
+   }
+}
 
+.nav-active {
+   transform: translateX(0%);
+}
 
+@keyframes navLinkFade {
+   from {
+      opacity: 0;
+      transform: translate(50px);
+   }
+   to {
+      opacity: 1;
+      transform: translate(0px);
+   }
+}
+
+.toggle .line1 {
+   transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+   opacity: 0;
+}
+
+.toggle .line3{
+   transform: rotate(45deg) translate(-5px, -6px);
 }
