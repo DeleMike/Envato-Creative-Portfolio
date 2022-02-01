@@ -286,54 +286,110 @@ p {
    padding-left: 100px;
 }
 
-#portfolio p {
-   color: var(--text-color);
+.pf-general-wrapper {
+   margin: 50px;
+   display: -ms-grid;
+   display: grid;
+   color: var(--accent-color);
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 300px 300px 300px;
 }
 
-.portfolio-general-wrapper{
-   background-color: var(--color-primary);
+.content {
+   background-color: #36353500;
+   position: absolute;
+   bottom: 10px;
+   width: 100%;
+   padding: 10px;
+   color: #fff;
+   line-height: 1.8;
+
 }
 
-.portfolio-wrapper1,
-.portfolio-wrapper2,
-.portfolio-wrapper3 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 25px;
-   
+.content h3 a {
+   text-decoration: none;
+   color: #fff;
+
 }
 
-.portfolio-wrapper1-inner,
-.portfolio-wrapper2-inner {
-    margin-bottom: 50px;
-    padding-left: 100px;
+.one {
+   background: url(/images/graffiti.jpg) no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
 }
 
-.portfolio-wrapper1-inner p,
-.portfolio-wrapper2-inner p {
-    text-align: center;
-    font-size: 2em;
+.two {
+   background: url(/images/ds_algo.jpg) no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+
 }
 
-.inner-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* background-color: dimgray; */
+.three {
+   background: url(/images/graffiti.jpg) no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
 }
 
-.aside {
-    width: 35%;
+.four {
+   background: url(/images/lrg-graffiti.jpg) no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
 }
 
-.aside p {
-    margin-left: 100%;
-    color: var(--text-color);
+.five {
+   background: url(/images/graffiti.jpg) no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
 }
 
+.six {
+   background: url(/images/graffiti.jpg) no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
 
+.seven {
+   background: url(/images/ds_algo.jpg) no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven {
+   border-radius: 30px;
+   margin: 10px;
+}
+
+.four {
+   grid-column-start: 1;
+   grid-column-end: 3;
+}
+
+.seven {
+   grid-column-start: 2;
+   grid-column-end: 4;
+}
+
+#portfolio-land {
+   display: block;
+}
+
+#portfolio-mobile {
+   display: none;
+}
 
 
 @media screen and (max-width:1024px) {
@@ -363,6 +419,14 @@ p {
    }
 
    #services-mobile {
+      display: block;
+   }
+
+   #portfolio-land {
+      display: none;
+   }
+
+   #portfolio-mobile {
       display: block;
    }
 
