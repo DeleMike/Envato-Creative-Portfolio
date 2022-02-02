@@ -7,6 +7,7 @@
 * {
    margin: 0px;
    padding: 0px;
+   align-self: auto;
    box-sizing: border-box;
 }
 
@@ -146,16 +147,16 @@ nav {
    margin-bottom: 18px;
 }
 
-.resume {
+#resume {
    background-color: var(--color-primary);
    color: #fff;
    opacity: 0.85;
    border-radius: 4px;
-   padding: 16px;
+   padding: 25px;
    box-shadow: rgba(0, 0, 0, 0.25);
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
    width: 35%;
-   height: 12%;
+   height: 52px;
    cursor: pointer;
    margin-top: 18px;
 
@@ -202,8 +203,9 @@ nav {
 }
 
 .services-head {
-   padding-left: 100px;
-   text-align: justify;
+   margin: 0;
+   padding-left: 10px;
+   text-align: center;
    font-size: 2em;
    font-weight: solid;
    color: var(--color-primary);
@@ -391,6 +393,37 @@ p {
    display: none;
 }
 
+.projects {
+   background-color: var(--color-primary);
+   width: 100%;
+}
+
+.projects main {
+   display: flex;
+   justify-content: space-around;
+
+}
+
+.block-one,
+.block-two,
+.block-three,
+.block-four,
+.block-five,
+.block-six,
+.block-seven {
+   padding: 25px;
+}
+
+.icon,
+.below-icon {
+   text-align: center;
+}
+
+.projects h1 {
+   text-align: center;
+   margin-top: 30px;
+   color: #fff;
+}
 
 @media screen and (max-width:1024px) {
    .nav-links {
@@ -400,7 +433,7 @@ p {
    }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:770px) {
 
    body {
       overflow-x: hidden;
@@ -604,6 +637,85 @@ p {
       padding: 12px;
       text-align: center;
    }
+
+   .pf-container {
+      width: 100%;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+   }
+
+   .box {
+      width: 94%;
+      height: 450px;
+      background-color: #1e1e2e;
+      border-radius: 10px;
+      box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      margin: 30px 10px;
+   }
+
+   .box:hover {
+      background-color: #17171d;
+      transform-style: preserve-3d;
+      transform: scale(1.02);
+      transition: all ease 0.3s;
+   }
+
+   .box:hover h3 {
+      color: #c0292b;
+      transition: all ease 0.5s;
+   }
+
+   .model {
+      height: 350px;
+      max-width: 100%;
+      padding-top: 30px;
+   }
+
+   .details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      background-color: #36353513;
+      color: #fff;
+      padding-bottom: 30px;
+   }
+
+   .details h3 a {
+      text-decoration: none;
+      color: #fff;
+      margin: 20px;
+      font-size: 16px;
+      width: 250px;
+   }
+
+   .pf-container ul {
+      list-style-type: none;
+   }
+
+   .pf-container a {
+      text-decoration: none;
+   }
+
+   .projects {
+      background-color: var(--color-primary);
+      width: 83%;
+      margin: 10px 20px;
+      border-radius: 20px;
+   }
+
+   .projects main {
+      display: block;
+      justify-content: space-around;
+
+   }
+
 }
 
 .nav-active {
