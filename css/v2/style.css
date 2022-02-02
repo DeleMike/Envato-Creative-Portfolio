@@ -11,9 +11,14 @@
    box-sizing: border-box;
 }
 
+html {
+   overflow-x: hidden;
+}
+
 body {
    overflow-x: hidden;
    font-family: 'Prompt', sans-serif;
+
 }
 
 nav {
@@ -622,7 +627,9 @@ input[type=submit]:hover {
       font-size: 1.2em;
       color: var(--text-color);
       margin-top: 50px;
+      margin-bottom: 30px;
       width: 75vw;
+      padding-left: 20px;
    }
 
 
@@ -682,21 +689,23 @@ input[type=submit]:hover {
       padding: 0px;
    }
 
+   .service-intro {
+      text-align: center;
+   }
+
    #services-head {
       margin-top: 30px;
       font-size: 2em;
       font-weight: solid;
       color: var(--color-primary);
-      text-align: center;
+      /* text-align: center - start; */
       padding: 0;
    }
 
    .services-p {
       font-weight: 5;
       font-size: 1.1rem;
-      margin: 3px 0 auto;
       color: var(--text-color);
-      text-align: center;
       padding: 0;
    }
 
@@ -745,6 +754,10 @@ input[type=submit]:hover {
       padding: 12px;
       text-align: center;
    }
+
+   /* .portfolio-head{
+      margin-top: 30px;
+   } */
 
    .pf-container {
       width: 100%;
@@ -858,7 +871,7 @@ input[type=submit]:hover {
 
    .main-socials {
       display: flex;
-      
+
       padding-left: 25px;
       align-items: center;
    }
@@ -874,7 +887,7 @@ input[type=submit]:hover {
 
    .social {
       background-color: var(--color-primary);
-      width: 95%;
+      width: 100%;
    }
 
 }
