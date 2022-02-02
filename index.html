@@ -8,10 +8,11 @@
 
     <link rel="stylesheet" href="css/font-awesome/all.css">
     <link rel="stylesheet" href="css/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/v2/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
     <title>Envato Creative Portfolio</title>
 </head>
 
@@ -19,54 +20,137 @@
     <section id="home">
         <div class="home-bg">
             <header>
-                <a href="#home">
+                <nav>
                     <div class="logo">
-                        DITA
+                        <h4>DITA</h4>
                     </div>
-                </a>
-                <div class="menu-list">
-                    <ul id="myDIV">
-                        <li class="btn active">
-                            <a href="#home">Home</a>
-                        </li>
-                        <li class="btn">
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="btn">
-                            <a href="#services">Services</a>
-                        </li>
-                        <li class="btn">
-                            <a href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="btn">
-                            <a href="#contact">Contact Me</a>
-                        </li>
+                    <ul class="nav-links">
+                        <li><a href="#"><span class="underline">Home</span></a></li>
+                        <li><a href="#"><span class="underline">Abou</span>t</a></li>
+                        <li><a href="#"><span class="underline">Services</span></a></li>
+                        <li><a href="#"><span class="underline">Portfolio</span></a></li>
+                        <li><a href="#"><span class="underline">Contact Me</span></a></li>
                     </ul>
-                </div><!-- MENU-LIST END -->                
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
+
+                <div class="intro-self">
+                    <div class="intro-text">
+                        <h1>Hello! I am <span class="name">Arial DITA</span></h1>
+                    </div>
+                    <div class="intro-ocpt">I am a Fullstack Developer</div>
+                </div>
             </header>
             <div class="intro-self">
-                <div class="intro-text">
-                    <h1>Hello! I am <span class="name">Arial DITA</span></h1>
-                </div><!-- INTRO-TEXT END -->
-                <div class="intro-ocpt">I am a Fullstack Developer</div>
-            </div><!-- INTRO=SELF END -->
-        </div><!-- HOME-BG END -->
-    </section><!-- HOME END -->
-    <section id="about">
+            </div>
+    </section>
+
+    <section id="about-land">
+        <main>
+            <div class="about-wrapper">
+                <div class="text">
+                    <h3 class="about-me">About Me</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam molestiae ad sunt, itaque doloribus
+                        mollitia praesentium magnam corporis impedit, nobis beatae fuga magni repellendus cupiditate!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sit accusamus aspernatur omnis,
+                        laborum at eum quae perspiciatis!
+                    </p>
+                    <!-- <a href="#" id="resue">Resume</a> -->
+                    <button type="submit" title="Download Resume" class="resume">
+                        <div class="download-resume"></div>
+                    </button>
+                </div>
+                <div class="about-wrapper-inner large">
+                    <div class="about-image"></div>
+                </div>
+        </main>
+    </section>
+
+    <section id="about-mobile">
         <main>
             <div class="about-wrapper">
                 <div class="text">
                     <h3 id="about-me">About Me</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam molestiae ad sunt, itaque doloribus mollitia praesentium magnam corporis impedit, nobis beatae fuga magni repellendus cupiditate!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sit accusamus aspernatur omnis, laborum at eum quae perspiciatis!
-                    </p>
-                    <a href="#" id="resume">Resume</a>
-                </div><!-- ABOUT-WRAPPER-INNER TEXT END-->
-                <div class="about-wrapper-inner large"><img src="images/girl.svg" alt="DITA" class="about-image"></div>
-            </div><!-- ABOUT-WRAPPER END-->
+                    <div class="about-wrapper-inner large">
+                        <div class="about-image"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam molestiae ad sunt, itaque
+                            doloribus mollitia praesentium magnam corporis impedit, nobis beatae fuga magni repellendus
+                            cupiditate!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sit accusamus aspernatur
+                            omnis, laborum at eum quae perspiciatis!
+                        </p>
+                        <!-- <a href="#" id="resue">Resume</a> -->
+                        <button type="submit" title="Download Resume" id="resume">
+                            <div class="download-resume"></div>
+                        </button>
+                    </div>
+
+                </div>
         </main>
-    </section><!-- ABOUT END-->
-    <section id="services">
+    </section>
+
+    <section id="services-land">
+        <main>
+            <div class="service-intro">
+                <h3 class="services-head">Services</h3>
+                <p class="services-p">What I Can Do For You</p>
+            </div>
+            <div class="services-wrapper">
+                <div class="services-wrapper-inner">
+                    <div class="icons">
+                        <img src="images/tv_and_mobile.png" alt="monitor">
+                    </div>
+                    <div class="below-icons">
+                        <h3>WebApps and Websites</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus
+                            minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur
+                            ipsum.</p>
+                    </div>
+                </div>
+                <div class="services-wrapper-inner">
+                    <div class="icons">
+                        <img src="images/grid.png" alt="monitor">
+                    </div>
+                    <div class="below-icons">
+                        <h3>Apps</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus
+                            minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur
+                            ipsum.</p>
+                    </div>
+                </div>
+                <div class="services-wrapper-inner">
+                    <div class="icons">
+                        <img src="images/vectors.png" alt="monitor">
+                    </div>
+                    <div class="below-icons">
+                        <h3>Graphic Designs</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus
+                            minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur
+                            ipsum.</p>
+                    </div>
+                </div>
+                <div class="services-wrapper-inner">
+                    <div class="icons">
+                        <img src="images/rounded_box.png" alt="monitor">
+                    </div>
+                    <div class="below-icons">
+                        <h3>Animations</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus
+                            minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur
+                            ipsum.</p>
+                    </div>
+                </div>
+            </div>
+            <!--SERVICES-WRAPPER END-->
+        </main>
+    </section>
+
+    <section id="services-mobile">
         <main>
             <div class="service-intro">
                 <h3 id="services-head">Services</h3>
@@ -75,139 +159,115 @@
             <div id="services-wrapper">
                 <div class="services-wrapper-inner">
                     <div class="icons">
-                        <img src="images/monitor.png" alt="monitor">
+                        <img src="images/tv_and_mobile.png" alt="monitor">
                     </div>
                     <div class="below-icons">
                         <h3>WebApps and Websites</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur ipsum.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus
+                            minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur
+                            ipsum.</p>
                     </div>
                 </div>
                 <div class="services-wrapper-inner">
                     <div class="icons">
-                        <img src="images/monitor.png" alt="monitor">
+                        <img src="images/grid.png" alt="monitor">
                     </div>
                     <div class="below-icons">
                         <h3>Apps</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur ipsum.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus
+                            minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur
+                            ipsum.</p>
                     </div>
                 </div>
                 <div class="services-wrapper-inner">
                     <div class="icons">
-                        <img src="images/monitor.png" alt="monitor">
+                        <img src="images/vectors.png" alt="monitor">
                     </div>
                     <div class="below-icons">
                         <h3>Graphic Designs</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur ipsum.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus
+                            minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur
+                            ipsum.</p>
                     </div>
                 </div>
                 <div class="services-wrapper-inner">
                     <div class="icons">
-                        <img src="images/monitor.png" alt="monitor">
+                        <img src="images/rounded_box.png" alt="monitor">
                     </div>
                     <div class="below-icons">
                         <h3>Animations</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur ipsum.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus
+                            minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur
+                            ipsum.</p>
                     </div>
                 </div>
-            </div><!--SERVICES-WRAPPER END-->
+            </div>
         </main>
-    </section><!-- SERVICES END-->
-    <section id="portfolio">
+    </section>
+
+    <section id="portfolio-land">
         <main>
-            <h3 id="portfolio-head">Portfolio</h3>
-            <p class="portfolio-p">some of my best works...</p>
-            <div id="portfolio-wrapper1">
-                <div class="portfolio-wrapper1-inner">
-                    <img src="images/graffiti.jpg" alt="my work" height="300px" width="400px">
-                    <p>Title Here</p>
-                    <p>Website</p>
-                </div>
-                <div class="portfolio-wrapper1-inner">
-                    <img src="images/graffiti.jpg" alt="my work" height="300px" width="400px">
-                    <p>Title Here</p>
-                    <p>Website</p>
-                </div>
-                <div class="portfolio-wrapper1-inner">
-                    <img src="images/graffiti.jpg" alt="my work" height="300px" width="400px">
-                    <p>Title Here</p>
-                    <p>Website</p>
-                </div>
-            </div><!--PORTFOLIO WRAPPER1 END-->
-            <div id="portfolio-wrapper2">
-                <div class="portfolio-wrapper2-inner inner-flex">
-                    <img src="images/lrg-graffiti.jpg" alt="my work" width="630px" height="497px">
-                    <div class="paragraph">
-                        <p>Title Here</p>
-                        <p>Website</p>
+            <h3 class="portfolio-head">Portfolio</h3>
+            <p class="portfolio-p">Some of my best works...</p>
+            <div class="pf-general-wrapper">
+
+                <div class="one">
+                    <div class="content">
+                        <h1>Title</h1>
+                        <h3><span><a href="#">Website Link</a></span> </h3>
                     </div>
                 </div>
-                <div class="portfolio-wrapper2-inner aside">
-                    <img src="images/graffiti.jpg" alt="my work" height="300px" width="100%">
-                    <div class="aside">
-                        <p>Title Here</p>
-                        <p>Website</p>
+                <div class="two">
+                    <div class="content">
+                        <h1>Title</h1>
+                        <h3><span><a href="#">Website Link</a></span> </h3>
                     </div>
                 </div>
-            </div><!--PORTFOLIO-WRAPPER2 END-->
-            <div id="portfolio-wrapper3">
-                <div class="portfolio-wrapper2-inner aside">
-                    <img src="images/graffiti.jpg" alt="my work" height="300px" width="100%">
-                    <div class="aside">
-                        <p>Title Here</p>
-                        <p>Website</p>
-                    </div>
-                </div><!--aside end-->
-                <div class="portfolio-wrapper2-inner inner-flex">
-                    <img src="images/lrg-graffiti.jpg" alt="my work" width="630px" height="497px">
-                    <div class="paragraph">
-                        <p>Title Here</p>
-                        <p>Website</p>
+                <div class="three">
+                    <div class="content">
+                        <h1>Title</h1>
+                        <h3><span><a href="#">Website Link</a></span> </h3>
                     </div>
                 </div>
+                <div class="four">
+                    <div class="content">
+                        <h1>Title</h1>
+                        <h3><span><a href="#">Website Link</a></span> </h3>
+                    </div>
+                </div>
+                <div class="five">
+                    <div class="content">
+                        <h1>Title</h1>
+                        <h3><span><a href="#">Website Link</a></span> </h3>
+                    </div>
+                </div>
+                <div class="six">
+                    <div class="content">
+                        <h1>Title</h1>
+                        <h3><span><a href="#">Website Link</a></span> </h3>
+                    </div>
+                </div>
+                <div class="seven">
+                    <div class="content">
+                        <h1>Title</h1>
+                        <h3><span><a href="#">Website Link</a></span> </h3>
+                    </div>
+                </div>
+
             </div>
         </main>
-    </section><!-- PORTFOLIO END-->
-    <section class="counter">
-        <div>
-            <h2>We are opening soon!</h2>
-            <div class="countdown">
-                <div class="container-day">
-                    <h3 class="day">Time</h3>
-                    <h3>Day</h3>
-                </div>
-                <div class="container-hour">
-                    <h3 class="hour">Time</h3>
-                    <h3>Hour</h3>
-                </div>
-                <div class="container-minute">
-                    <h3 class="minute">Time</h3>
-                    <h3>Minute</h3>
-                </div>
-                <div class="container-second">
-                    <h3 class="second">Time</h3>
-                    <h3>Second</h3>
-                </div>
-            </div>
-        </div>
-        <img src="./images/coming_soon.png" alt="A girl waiting" class="waiting">
-    </section><!--COUNTER END-->
-    <main>
-        <section id="contact">
-            <h3 id="contact-me">Contact Me</h3>
-            <div id="contact-inner">
-                <p id="contact-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam impedit accusamus harum possimus. Dolorem aspernatur repellat, similique at porro iste id voluptatibus assumenda dolorum ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laborum sequi vel fuga distinctio blanditiis omnis ea a eligendi animi.</p>
-                <form action="GET">
-                    <label for="name">Hi there, what's your name?</label>
-                    <input type="text" placeholder="John">
-                    <label for="email">and you email too</label>
-                    <input type="email" name="email" placeholder="me@gmail.com">
-                    <label for="">what can i help you with?</label>
-                    <input type="text">
-                    <label for="">tell me more about it</label>
-                    <textarea name="message" cols="30" rows="5"></textarea>
-                </form>
-            </div><!--CONTACT-INNER END-->
-        </section><!-- CONTACT END--></main>
+    </section>
+
+    <section id="portfolio-mobile">
+        <main>
+            <h3 class="portfolio-head">Portfolio</h3>
+            <p class="portfolio-p">Some of my best works...</p>
+            <div class="pf-slider">
+               
+            </div> 
+              
+        </main>
+    </section>
 
     <script src="js/custom.js"></script>
 </body>
