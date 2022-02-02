@@ -1,14 +1,14 @@
-$(document).ready(function() {
+$(document).ready(function () {
   $('#autoWidth').lightSlider({
-      autoWidth:true,
-      loop:true,
-      controls: true,
-      keyPress: true,
-      
-      onSliderLoad: function() {
-          $('#autoWidth').removeClass('cS-hidden');
-      } 
-  });  
+    autoWidth: true,
+    loop: true,
+    controls: true,
+    keyPress: true,
+
+    onSliderLoad: function () {
+      $('#autoWidth').removeClass('cS-hidden');
+    }
+  });
 });
 
 const navSlide = () => {
@@ -22,7 +22,7 @@ const navSlide = () => {
 
     //Animate links
     navLinks.forEach((link, index) => {
-      if (link.style.animation) { 
+      if (link.style.animation) {
         link.style.animation = ''
       } else {
         link.style.animation = `navLinkFade 0.5s ease forwards ${index /7 + 0.5}s`
