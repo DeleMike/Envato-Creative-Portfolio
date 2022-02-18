@@ -6,7 +6,7 @@ $(document).ready(function () {
     keyPress: true,
 
     onSliderLoad: function () {
-      $('#autoWidth').removeClass('cS-hidden');
+      $('#autoWidth').removeClass('cs-hidden');
     }
   });
 });
