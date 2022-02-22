@@ -41,16 +41,18 @@ const form = document.getElementById('contact-form')
 const formEvent = form.addEventListener("submit", (event) => {
   event.preventDefault();
   let mail = new FormData(form);
+  console.log('testing');
+  alert('Email Sent!')
   sendMail(mail);
 })
 
 const sendMail = (mail) => {
-  fetch("https://envato-portfolio.netlify.app/send", {
+  fetch("http://localhost:3000/send", {
     method: "post",
     body: mail,
 
   }).then((response) => {
-    return response.json();
+    return response.json({'sent':true});
   });
 };
 
@@ -82,7 +84,7 @@ const countdown = () => {
 
 const app = () => {
   navSlide();
-  setInterval(countdown, 1000);
+  //setInterval(countdown, 1000);
 }
 
 app()
