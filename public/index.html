@@ -425,19 +425,19 @@
                 </div>
 
                 <div class="form">
-                    <form action="POST">
+                    <form action="send" id="contact-form" method="POST" enctype = "multipart/form-data">
 
                         <label for="fname">Hi, there what's your name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Please enter your name">
+                        <input type="text" id="fname" name="firstname" placeholder="Please enter your name" required>
 
                         <label for="email">And your email too</label>
-                        <input type="text" id="email" name="email" placeholder="Please your email address">
+                        <input type="text" id="email" name="email" placeholder="Please your email address" required>
 
-                        <label for="email">What can I help you with?</label>
-                        <input type="text" id="req" name="request" placeholder="A short description your request">
+                        <label for="subject">What can I help you with?</label>
+                        <input type="text" id="req" name="request" placeholder="A short description your request" required>
 
-                        <label for="subject">Tell Me more about it:</label>
-                        <textarea id="subject" name="subject" placeholder="Talk more about it.."></textarea>
+                        <label for="requestDetail">Tell Me more about it:</label>
+                        <textarea id="requestDetail" name="requestDetail" placeholder="Talk more about it.." required></textarea>
 
                         <input type="submit" value="Submit">
 
