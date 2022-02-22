@@ -54,7 +54,6 @@ app.post("/send", (req, res) => {
     };
 
     // console.log('Mail Options Sender: ', `${mailOptions.from}`);
-    
     /*
     send email to sender
 
