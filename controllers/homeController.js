@@ -1,8 +1,15 @@
 
 const getHomePage = async (req, res) => {
-   res.status(200).send({'page':'Home Page', gotten:true})
+   res.status(200).json({'page':'Home Page', gotten:true})
 }
 
-module.exports = {
-   getHomePage
+const sendContactDetails = async (req, res) => {
+   res.status(201).json({'info': 'Your message have been sent.'});
+}
+
+module.exports = {sendContactDetails}
+
+module.exports = {   
+   getHomePage,
+   sendContactDetails
 } 

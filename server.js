@@ -3,14 +3,14 @@ require('dotenv').config();
 
 const express = require('express')
 const app = express()
-const homeRouter = require('./routes/home'); 
-const notFoundMiddleware = require('./middleware/notFound');
+const router = require('./routes/home')
+const notFoundMiddleware = require('./middleware/notFound')
 const port = process.env.PORT || 3000;
 
 //middle ware
 app.use(express.static('./public'))
-app.use(express.json());
-app.use(homeRouter)
+app.use(express.json())
+app.use(router)
 app.use(notFoundMiddleware)
 
 app.listen(port, () => {

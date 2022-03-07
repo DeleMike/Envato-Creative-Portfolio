@@ -36,24 +36,14 @@ const navSlide = () => {
   });
 }
 
-//get access to form
-const form = document.getElementById('contact-form')
-const formEvent = form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  let mail = new FormData(form);
-  console.log('testing');
-  alert('Email Sent!')
-  sendMail(mail);
-})
-
-const sendMail = (mail) => {
-  fetch("http://localhost:3000/send", {
-    method: "post",
-    body: mail,
-
-  }).then((response) => {
-    return response.json({'sent':true});
-  });
+const sendMail = async (mail) => {
+  console.log(axios.post({ mail }));
+  try {
+    
+     await axios.post({ mail })
+  } catch (error) {
+    print('An error occured')
+  }
 };
 
 
