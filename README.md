@@ -2,6 +2,6 @@
 
 A customisable portfolio website.
 
-Check out the [preview](https://deploy-preview-4--envato-portfolio.netlify.app/)
+Check out the [preview](https://envato-creative-portfolio.herokuapp.com/)
 
 &copy; DesignIT Africa
