@@ -6,7 +6,7 @@ $(document).ready(function () {
     keyPress: true,
 
     onSliderLoad: function () {
-      $('#autoWidth').removeClass('cS-hidden');
+      $('#autoWidth').removeClass('cs-hidden');
     }
   });
 });
@@ -36,6 +36,17 @@ const navSlide = () => {
   });
 }
 
+const sendMail = async (mail) => {
+  console.log(axios.post({ mail }));
+  try {
+    
+     await axios.post({ mail })
+  } catch (error) {
+    print('An error occured')
+  }
+};
+
+
 /**
  * Displays countdown timer
  */
@@ -63,7 +74,7 @@ const countdown = () => {
 
 const app = () => {
   navSlide();
-  setInterval(countdown, 1000);
+  //setInterval(countdown, 1000);
 }
 
 app()

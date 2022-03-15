@@ -1,0 +1,30 @@
+{
+  "name": "envato-creative-portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "16.13.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeleMike/Envato-Creative-Portfolio.git"
+  },
+  "author": "DesignIT Africa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeleMike/Envato-Creative-Portfolio/issues"
+  },
+  "homepage": "https://github.com/DeleMike/Envato-Creative-Portfolio#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "multiparty": "^4.2.3",
+    "nodemailer": "^6.7.2"
+  }
+}
