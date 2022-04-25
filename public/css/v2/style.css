@@ -1,3 +1,9 @@
+/*
+   Property of DesignIT Africa. 
+   Created by Michael & Omotola
+   © 2022 
+*/
+
 :root {
    --color-primary: #4F35EF;
    --accent-color: #d8d6e6;
@@ -18,7 +24,6 @@ html {
 body {
    overflow-x: hidden;
    font-family: 'Prompt', sans-serif;
-
 }
 
 nav {
@@ -40,6 +45,7 @@ nav {
    background-blend-mode: darken;
    background-position: center;
    background-size: cover;
+   
 }
 
 .logo {
@@ -53,6 +59,7 @@ nav {
    display: flex;
    justify-content: space-around;
    width: 40%;
+
 }
 
 .nav-links li {
@@ -65,6 +72,7 @@ nav {
    letter-spacing: 3px;
    font-weight: bold;
    font-size: 12px;
+   padding-right: 3.5px;
 }
 
 .underline:hover {
@@ -101,11 +109,13 @@ nav {
    margin: 10px;
    font-size: 48px;
    color: var(--accent-color);
+
 }
 
 .intro-text .name {
    color: var(--color-primary);
 }
+
 
 .intro-ocpt {
    font-size: 20px;
@@ -586,8 +596,8 @@ input[type=submit]:hover {
       flex-direction: column;
       align-items: center;
       width: 50%;
-      transform: translateX(100%);
-      transition: transform 0.5s ease-in;
+      transform: translateX(-500px);
+      transition: transform 0.75s ease-in;
    }
 
    .nav-links li {
@@ -849,7 +859,7 @@ input[type=submit]:hover {
 
    .contact-div-text h2 {
       color: var(--color-primary);
-      padding: 20px
+      padding: 0px
    }
 
    .contact-div-text p {
@@ -882,7 +892,7 @@ input[type=submit]:hover {
    .linkedin,
    .github,
    .mail {
-      padding: 5px;
+      padding: 12px;
    }
 
    .social {
@@ -918,4 +928,134 @@ input[type=submit]:hover {
 
 .toggle .line3 {
    transform: rotate(45deg) translate(-5px, -6px);
+}
+ 
+@media screen and (max-width: 576px){
+
+   *{
+      margin: 0px;
+      padding: 0px;
+   }
+
+   .home-bg {
+      width: 100%;
+      height: 100vh;
+      background: url(/images/girl.svg) rgba(0, 0, 30, 0.76) no-repeat;
+      background-blend-mode: darken;
+      background-position: center;
+      background-size: cover;
+
+   }
+
+   .about-me {
+      padding-bottom: 16px;
+      text-align:ce;
+      font-size: 2em;
+      font-weight: solid;
+      color: var(--color-primary);
+      margin-bottom: 18px;
+   } 
+   
+   nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px;
+      padding-right: 10%;
+      align-items: center;
+      min-height: 8vh;
+      font-family: 'Prompt', sans-serif;
+      background-color: rgba(1, 1, 68, 0.911);
+      background-blend-mode: lighten;
+      width:auto;
+   }
+   
+
+
+}
+   
+@media screen and (max-width:576px){
+   body{
+      overflow-x: hidden;
+   }
+   
+   #about-land {
+      display: none;
+   }
+   #about-mobile {
+      display: block;
+
+   }
+   #services-land{
+      display: none;
+   }
+   #services-mobile{
+      display: block;
+   }
+   #portfolio-land{
+      display: none;
+   }
+   #portfolio-mobile{
+      display: block;
+   }
+
+   .intro-text{
+      margin-top: 55%;
+      margin-bottom: 30px;
+   }
+
+   #about-me{
+      padding:10px ;
+   }
+
+   .services-p{
+      padding-left: 0px;
+      padding-bottom:none;
+   }
+   .service-intro{
+      padding-bottom:none;
+   }
+   .services-wrapper{
+      margin-top: 30px;
+   }
+
+   .icons {
+      margin: 15px auto;
+      height: 45%;
+      text-align: center;
+   }
+
+   .icons img {
+      height: 50px;
+      width: 50px;
+      margin-top: 0px;
+   }
+
+   #services-wrapper {
+      display: table;
+      width: 100%;
+      margin-top: 10px;
+      padding: 0px;
+   }
+
+   .portfolio-head{
+      padding-left: 130px;
+      padding-top: 50px;
+   }
+
+   .form{
+      width: 100%;
+      padding: 30px;
+   }
+
+   #title{
+      padding-left: 90px;
+   }
+   
+   .projects {
+      background-color: var(--color-primary);
+      width: 83%;
+      margin: 10px 32px;
+      border-radius: 20px;
+   }
+
 }
